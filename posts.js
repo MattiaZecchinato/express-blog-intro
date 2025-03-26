@@ -31,4 +31,4 @@ const posts = [
     }
 ];
 
-module.export = posts;
+module.exports = posts;

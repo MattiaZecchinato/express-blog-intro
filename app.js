@@ -6,8 +6,9 @@ const port = 3000;
 
 // include posts
 const posts = require('./posts.js');
-
 // console.log(posts);
+
+app.use(express.static('public'));
 
 // run code inside when client get a request on this specific route
 app.get('/', (req, res) => {
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 app.get('/bacheca', (req, res) => {
     
     console.log('Test /bacheca');
+
     res.json(posts);
 });
 
